@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+  <meta charset="UTF-8">
+  <title>RACISM Detector APP</title>
+  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+    </head>
+
+    <body bgcolor='lightblue'>
+
+        <center>
+        <h1 style="color:blue;">Machine Learning Web App</h1><br/>
+        <h2 style="color:red;"><b>Similarity score calculator</b></h2><br/><br/>
+        </center>
+                      
+    	        <center>
+                <form action="{{ url_for('predict') }}" method="POST">
+                
+                <textarea name="CLO" rows="1" cols="55" placeholder="Enter the CLO here..."></textarea><br/><br/><br/>
+                <textarea name="PLO" rows="1" cols="55" placeholder="Enter the PLO here..."></textarea><br/>
+
+                
+                <br/><br/>
+
+                <input type="submit" value="Predict">
+        	</form>
+                </center>
+              
+              
+              <br/>
+              <br/>
+              <center>
+              <h2 style="color:Green;">{{ prediction }}</h2>
+              
+              
+              </center>
+
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              
+        
+       <div class='footer'>
+           <center>
+           <p>Made by Anusuya.</p>
+           </center>
+       </div>
+
+    </body>
+</html>
