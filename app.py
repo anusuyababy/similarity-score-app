@@ -24,7 +24,7 @@ def predict():
     sen1 = cosine.get_profile(CLO)
     sen2 = cosine.get_profile(PLO)
     cosine_sim = cosine.similarity_profiles(sen1, sen2) 
-    return render_template('index.html', prediction='The similarity score for the given text is {}.'.format(cosine_sim))
+    return render_template('index.html', prediction='The similarity score for the given CLO and PLO is {}.'.format(cosine_sim))
 
 if __name__=="__main__":
     app.run(debug=True)
